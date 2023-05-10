@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Krub:400,700');
+body {
+  background: #202020;
+  font-family: 'Krub', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+h1 {
+  color: crimson;
+  font-size: 40px;
+  font-weight: 900;
+}
+h2 {
+  color: #7ECE90;
+  font-size: 20px;
+  font-weight: lighter;
+  font-weight: 500;
+}
+h6  {
+  color: black;
+  font-size: 25px;
+  font-weight: 200;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #6B72E1;
+  font-weight: 600;
+  font-size: 16px;
+}
+a:hover {
+  color: black;
+}
+
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.card-interest {
+  column-count: 3;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.btn-voice {
+  position: absolute;
+      top: 600 px;
+      right: 0;
+      left: 1400px;
+      width: 200px;
+      height: 50px;
+  background-color: #6B72E1;
+  color: white;
+  /* padding: 15px 20px; */
+  border-radius: 4px;
+}
+.btn-voice:hover {
+  background-color: black;
+  color: white;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+.list-inline i {
+  font-size: 50px;
+  color: rgb(230, 230, 230);
+}
+.list-inline i:hover {
+  color: black;
+}
+#introduction p {
+  margin-bottom: 40px;
+}
+  .interests_banner {
+      width: 315px;
+      position: relative;
+      margin-bottom: 50px;
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      z-index: 1;
+      border-radius: 15px;
+      -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+      box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+  }
+  .interests_banner .interests_base {
+      position: relative;
+      z-index: 1;
+      border-radius: 0px 0px 0 0;
+      margin: 0 auto;
+      padding: 0px 0px 0 0px;
+      background-color: #000000;
+      overflow: hidden;
+  }
+  .interests_banner .interests_base::after {
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      position: absolute;
+      width: 150%;
+      height: 80px;
+      bottom: -45px;
+      left: -25%;
+      content: "";
+      background-color: #ffffff;
+      -webkit-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+  }
+  @media only screen and (max-width: 575px) {
+      .interests_banner .interests_base::after {
+          height: 160px;
+          bottom: -90px;
+      }
+  }
+  .interests_banner .interests_base .social-info {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      bottom: 0;
+      right: 30px;
+      text-align: right;
+  }
+  .interests_banner .interests_base .social-info a {
+      font-size: 14px;
+      color: #000000;
+      padding: 0 5px;
+  }
+  .interests_banner .interests_base .social-info a:hover,
+  .interests_banner .interests_base .social-info a:focus {
+      color: crimson;
+  }
+  .interests_banner .interests_base .social-info a:last-child {
+      padding-right: 0;
+  }
+  .interests_banner .interests_description {
+      position: relative;
+      z-index: 1;
+      padding: 30px;
+      text-align: right;
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      border-radius: 0 0 15px 15px;
+      background-color: #ffffff;
+  }
+  .interests_banner .interests_description::after {
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      position: absolute;
+      z-index: 1;
+      width: 50px;
+      height: 3px;
+      background-color: #000000;
+      content: "";
+      top: 12px;
+      right: 30px;
+  }
+  .interests_banner .interests_description h6 {
+      margin-bottom: 0.25rem;
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .interests_banner .interests_description h6 {
+          font-size: 14px;
+      }
+  }
+  .interests_banner .interests_description p {
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      margin-bottom: 0;
+      font-size: 14px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .interests_banner .interests_description p {
+          font-size: 12px;
+      }
+  }
+  .interests_banner:hover .interests_base::after,
+  .interests_banner:focus .interests_base::after {
+      background-color: crimson;
+  }
+  .interests_banner:hover .interests_base .social-info a,
+  .interests_banner:focus .interests_base .social-info a {
+      color: #ffffff;
+  }
+  .interests_banner:hover .interests_base .social-info a:hover,
+  .interests_banner:hover .interests_base .social-info a:focus,
+  .interests_banner:focus .interests_base .social-info a:hover,
+  .interests_banner:focus .interests_base .social-info a:focus {
+      color: #ffffff;
+  }
+  .interests_banner:hover .interests_description,
+  .interests_banner:focus .interests_description {
+      background-color: crimson;
+  }
+  .interests_banner:hover .interests_description::after,
+  .interests_banner:focus .interests_description::after {
+      background-color: #ffffff;
+  }
+  .interests_banner:hover .interests_description h6,
+  .interests_banner:focus .interests_description h6 {
+      color: #ffffff;
+  }
+  .interests_banner:hover .interests_description p,
+  .interests_banner:focus .interests_description p {
+      color: #ffffff;
+  }
+  .image_banner {
+      width: 315px;
+      height: 600px;
+      object-fit: cover;
+  }
+  .grid-container {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    grid-template-columns: 315px 315px 315px 315px;
+    grid-gap: 20px;
+  }
+
+  .card {
+    margin: auto;
+    margin-bottom: 30px;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 1325px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+    background: white;
+    overflow: hidden;
+    .ds-top {
+      justify-content: center;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 1325;
+      height: 20px;
+      background: crimson;
+    }
+    .avatar-holder {
+      position: absolute;
+      margin: 15px 25px;
+      top: px;
+      right: 0;
+      left: 350px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px #151515,
+                  inset 0 0 0 5px #000000,
+                  inset 0 0 0 5px #000000,
+                  inset 0 0 0 5px #000000,
+                  inset 0 0 0 5px #000000,;
+      background: white;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .name {
+      margin: auto;
+      top: -60px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: inherit;
+      height: 40px;
+      text-align: center;
+    }
+  }
+
+  .following {
+    color: white;
+    background: crimson;
+  }
