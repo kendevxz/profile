@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Krub:400,700');
 body {
-  background: #202020;
+  background-image: url("images/wp.jpg");
   font-family: 'Krub', sans-serif;
 }
 h1, h2, h3 {
   font-family: 'Nunito Sans', sans-serif;
 }
+
 h1 {
   color: crimson;
   font-size: 40px;
@@ -94,6 +95,7 @@ a:hover {
 
 .list-inline li {
   display: inline;
+  margin: auto;
   padding: 10px;
 }
 .list-inline i {
@@ -310,4 +312,10 @@ a:hover {
   .following {
     color: white;
     background: crimson;
+  }
+  .bg {
+    color: black;
+    margin: auto;
+    justify-content: center;
+    width: 1400px;
   }
