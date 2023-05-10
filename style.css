@@ -314,7 +314,7 @@ a:hover {
     background: crimson;
   }
   .bg {
-    color: black;
+    background-color: black;
     margin: auto;
     justify-content: center;
     width: 1400px;
